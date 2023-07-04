@@ -38,6 +38,10 @@ html {
     color: #ccc;
 }
 
+.text-clr-light-2 {
+    color: #606060;
+}
+
 /* Link hover */
 .linkHover {
     background-image: linear-gradient(
@@ -45,7 +49,7 @@ html {
         transparent 0%,
         transparent 90%,
         #222 90%,
-        rgb(48,48,48) 100%
+        #303030 100%
     );
     background-repeat: no-repeat;
     background-size: 0% 100%;

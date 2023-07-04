@@ -60,7 +60,7 @@ const Header = () => {
                             </li>
                         </ul>
                         <div className='mt-4 xl:m-0'>
-                            <p className='xl:hidden text-clr-1 opacity-90 my-2'>
+                            <p className='xl:hidden text-clr-light-2 my-2'>
                                 Quick links
                             </p>
                             <div className='flex gap-2 items-center'>
