@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 
 const App = () => {
     return (
-        <div className='px-2 lg:px-7 mx-auto max-w-[1440px]'>
+        <div className='px-3 md:px-5 mx-auto max-w-[1440px]'>
             <Header />
             <Outlet />
             <Footer />

@@ -14,6 +14,7 @@
 :root {
     --bg-clr-1: #fff;
     --text-clr-1: #222;
+    --text-clr-2: #4f4f4f;
     --text-shadow: 0 0 0 rgb(48, 48, 48);
 }
 
@@ -29,8 +30,32 @@ html {
     color: var(--text-clr-1);
 }
 
+.text-clr-2 {
+    color: var(--text-clr-2);
+}
+
 .text-clr-light {
     color: #ccc;
+}
+
+/* Link hover */
+.linkHover {
+    background-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 90%,
+        #222 90%,
+        rgb(48,48,48) 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 350ms;
+    padding-bottom: 3px;
+}
+.linkHover:hover {
+    background-size: 100% 100%;
+    background-position-x: left;
 }
 
 /* tailwindcss */

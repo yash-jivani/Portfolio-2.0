@@ -28,7 +28,6 @@ const Header = () => {
         setIsOpen(!isOpen);
         handleWidth();
     };
-    console.log(isOpen);
     return (
         <>
             <nav className='sticky flex top-0 left-0 p-2 py-3 pt-6 border-b-black border-b-2 justify-between items-center bg-clr-1 '>
