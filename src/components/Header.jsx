@@ -8,14 +8,13 @@ const Header = () => {
     const currentYear = new Date().getFullYear();
 
     useEffect(() => {
-        if (window.screen.width > 1025) {
+        if (window.innerWidth > 1025) {
             setIsOpen(true);
         }
+
         window.addEventListener("resize", handleWidth);
-        console.log("called !");
         return () => {
-            window.removeEventListener("resize", handleWidth);
-            console.log("removed !");
+            return window.removeEventListener("resize", handleWidth);
         };
     }, []);
 
@@ -27,11 +26,9 @@ const Header = () => {
 
     const handleMenu = () => {
         setIsOpen(!isOpen);
-        if (window.screen.width > 1025) {
-            setIsOpen(true);
-        }
+        handleWidth();
     };
-
+    console.log(isOpen);
     return (
         <>
             <nav className='sticky flex top-0 left-0 p-2 py-3 pt-6 border-b-black border-b-2 justify-between items-center bg-clr-1 '>
@@ -39,18 +36,21 @@ const Header = () => {
                     YASH &copy;{currentYear}
                 </div>
                 {isOpen ? (
-                    <div className='fixed bg-clr-1 right-0 top-0 h-screen w-full grid place-content-center items-center xl:static xl:w-auto xl:h-auto xl:flex xl:gap-5'>
+                    <div className='fixed z-10  bg-clr-1 right-0 top-0 h-screen w-full grid place-content-center items-center xl:static xl:w-auto xl:h-auto xl:flex xl:gap-5'>
                         <ul className='gap-4 flex flex-col font-normal xl:flex xl:gap-4 xl:flex-row'>
                             {links.map((currLink, index) => {
                                 return (
                                     <li
                                         className='text-left text-3xl uppercase xl:text-base font-normal'
-                                        onClick={() => {
-                                            handleMenu();
-                                        }}
                                         key={index}
                                     >
-                                        <Link to={currLink.path}>
+                                        <Link
+                                            to={currLink.path}
+                                            className='linkHover'
+                                            onClick={() => {
+                                                handleMenu();
+                                            }}
+                                        >
                                             {currLink.linkName}
                                         </Link>
                                     </li>
@@ -81,7 +81,7 @@ const Header = () => {
                     ""
                 )}
                 <div
-                    className='z-20 cursor-pointer xl:hidden md:text-xl'
+                    className='z-[9999] cursor-pointer xl:hidden md:text-xl'
                     onClick={() => {
                         handleMenu();
                     }}
