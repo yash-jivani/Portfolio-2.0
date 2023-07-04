@@ -1,0 +1,39 @@
+/* Google font poppines */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* CSS RESET */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-clr-1: #fff;
+    --text-clr-1: #222;
+    --text-shadow: 0 0 0 rgb(48, 48, 48);
+}
+
+html {
+    position: relative;
+}
+
+.bg-clr-1 {
+    background-color: var(--bg-clr-1);
+}
+
+.text-clr-1 {
+    color: var(--text-clr-1);
+}
+
+.text-clr-light {
+    color: #ccc;
+}
+
+/* tailwindcss */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
