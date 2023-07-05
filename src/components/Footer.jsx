@@ -13,7 +13,7 @@ const Footer = () => {
             <p className='text-clr-1'>
                 Please feel free to contact me by e-mail.
             </p>
-            <div className='w-full my-6 text-center flex justify-start items-center border-black border-b-[1px] hover:border-b-[#606060] hover:shadow-md'>
+            <div className='footer-mail w-full my-6 text-center flex justify-start items-center border-black border-b-[1px] hover:border-b-[#ccc] hover:text-[#303030]'>
                 <a
                     href='/'
                     className='text-xl sm:text-xl md:text-2xl lg:text-4xl xl:text-6xl'

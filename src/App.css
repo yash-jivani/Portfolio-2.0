@@ -1,5 +1,6 @@
 /* Google font poppines */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap");
 
 /* CSS RESET */
 *,
@@ -56,11 +57,22 @@ html {
     background-position-x: right;
     transition: background-size 350ms;
     padding-bottom: 3px;
+    height: 1px !important;
+    line-height: 1px !important;
 }
+
 .linkHover:hover {
     background-size: 100% 100%;
     background-position-x: left;
+    height: 1px !important;
+    line-height: 1px !important;
 }
+
+.font-quote {
+    font-family: "Dancing Script", serif;
+}
+
+
 
 /* tailwindcss */
 @tailwind base;

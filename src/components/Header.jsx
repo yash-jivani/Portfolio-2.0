@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { links } from "./utils/helper";
 import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa6";
+import { RxDividerVertical } from "react-icons/rx";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +37,7 @@ const Header = () => {
                 </div>
                 {isOpen ? (
                     <div className='fixed z-10  bg-clr-1 right-0 top-0 h-screen w-full grid place-content-center items-center xl:static xl:w-auto xl:h-auto xl:flex xl:gap-5'>
-                        <ul className='gap-4 flex flex-col font-normal xl:flex xl:gap-4 xl:flex-row'>
+                        <ul className='gap-4 flex flex-col font-normal xl:flex xl:gap-2 xl:flex-row'>
                             {links.map((currLink, index) => {
                                 return (
                                     <li
@@ -45,7 +46,7 @@ const Header = () => {
                                     >
                                         <Link
                                             to={currLink.path}
-                                            className='linkHover'
+                                            className='linkHover m-2'
                                             onClick={() => {
                                                 handleMenu();
                                             }}
@@ -55,14 +56,15 @@ const Header = () => {
                                     </li>
                                 );
                             })}
-                            <li className='text-left text-3xl uppercase xl:text-base font-normal'>
-                                <a href='/'>Resume</a>
-                            </li>
                         </ul>
-                        <div className='mt-4 xl:m-0'>
+                        <span className='hidden  xl:inline'>
+                            <RxDividerVertical size={28} color="#606060"/>
+                        </span>
+                        <div className='mt-4 xl:m-0 xl:flex xl:items-center'>
                             <p className='xl:hidden text-clr-light-2 my-2'>
                                 Quick links
                             </p>
+
                             <div className='flex gap-2 items-center'>
                                 <div className='rounded-full border border-black p-2 w-fit xl:rounded-none xl:border-0'>
                                     <FaLinkedinIn size={"22"} />
