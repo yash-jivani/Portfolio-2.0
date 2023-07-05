@@ -12,6 +12,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+*::selection {
+    background-color: #ccc;
+}
+
 :root {
     --bg-clr-1: #fff;
     --text-clr-1: #222;
@@ -20,6 +24,11 @@
 }
 
 html {
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+body {
     position: relative;
 }
 
@@ -71,8 +80,6 @@ html {
 .font-quote {
     font-family: "Dancing Script", serif;
 }
-
-
 
 /* tailwindcss */
 @tailwind base;

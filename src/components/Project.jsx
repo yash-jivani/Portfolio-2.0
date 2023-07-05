@@ -13,7 +13,7 @@ const Project = ({ project }) => {
                         <p className="text-sm "><span className="font-medium text-[#4f4f4f]">Techstack:</span> {techstack.join(", ")}</p>
                     </div>
                     <div className='w-max flex items-center gap-1 border-black border-b-2 hover:border-b-[#fff] hover:text-[#606060]'>
-                        <a href={github} className=''>
+                        <a href={github} target="_blank">
                             Link
                         </a>
                         <GoLink className='inline' />

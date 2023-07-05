@@ -27,10 +27,10 @@ const Intro = () => {
                 <div className='w-full lg:flex lg:justify-between'>
                     <div>
                         <h1 className='text-clr-2'>/01</h1>
-                        <h2 className='text-2xl lg:text-3xl'>I am</h2>
+                        <h2 className='text-2xl lg:text-3xl'>Me</h2>
                     </div>
-                    <div className='lg:w-2/3'>
-                        <p className='capitalize text-base my-3 xl:text-lg'>
+                    <div className='lg:w-2/3 lg:mt-20'>
+                        <p className='text-base my-3 xl:text-lg'>
                             Passionate about web technologies. I love working at
                             the intersection of creativity and user-friendly
                             interfaces. I create memorable web experiences. when
