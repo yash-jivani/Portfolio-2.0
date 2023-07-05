@@ -33,41 +33,34 @@ const AboutMe = () => {
         "Github",
     ];
     return (
-        <div className='md:px-6 lg:px-10'>
-            <div className='header text-clr-1 text-3xl my-11 uppercase xl:text-4xl'>
+        <main className='md:px-6 lg:px-10'>
+            <h1 className='header text-clr-1 text-3xl my-11 uppercase xl:text-4xl'>
                 • About me
-            </div>
-            <div className='my-16 xl:flex xl:flex-row-reverse xl:justify-between xl:gap-6'>
+            </h1>
+            <section className='my-16 xl:flex xl:flex-row-reverse xl:justify-between xl:gap-6'>
                 <div className='my-10 md:w-10/12 lg:w-2/3 xl:w-1/2 xl:my-0'>
                     <img src={Me} className='w-full' alt='Yash' />
                 </div>
                 <div className='xl:w-1/2 xl:self-end'>
-                    <div>
-                        <h1 className='uppercase text-clr-1 text-xl'>
-                            <p>
-                                <span className='font-medium'>
-                                    {" "}
-                                    Yash Jivani{" "}
-                                </span>
-                            </p>
-                            <p className='text-sm text-clr-light-2'>
-                                A{" "}
-                                <span className='font-medium'>
-                                    Full stack developer
-                                </span>{" "}
-                                based in{" "}
-                                <span className='font-medium'> India </span>
-                            </p>
-                        </h1>
-                        <p className='my-6'>
-                            I enjoy designing and programming web applications
-                            that exceed expectations. I love combining the
-                            worlds of logic and creative design to make
-                            eye-catching, accessible, and user-friendly
-                            websites. I'm always looking to improve my skill set
-                            and provide value to an organization.
+                    <h1 className='uppercase text-clr-1 text-xl'>
+                        <p className='font-medium'>Yash Jivani</p>
+                        <p className='text-sm text-clr-light-2'>
+                            A{" "}
+                            <span className='font-medium'>
+                                Full stack developer
+                            </span>{" "}
+                            based in{" "}
+                            <span className='font-medium'> India </span>
                         </p>
-                    </div>
+                    </h1>
+                    <p className='my-6'>
+                        I enjoy designing and programming web applications that
+                        exceed expectations. I love combining the worlds of
+                        logic and creative design to make eye-catching,
+                        accessible, and user-friendly websites. I'm always
+                        looking to improve my skill set and provide value to an
+                        organization.
+                    </p>
                     <div className='skills'>
                         <h1 className='uppercase text-clr-1 text-base font-medium'>
                             Skills
@@ -85,6 +78,7 @@ const AboutMe = () => {
                         <div className='mt-3'>
                             <a
                                 href='/'
+                                rel="noreferrer"
                                 className='text-clr-1 font-medium underline underline-offset-8 hover:no-underline hover:text-[#606060]'
                             >
                                 Resume &rarr;
@@ -92,15 +86,15 @@ const AboutMe = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             {quoteOfTheDay && (
-                <div className='my-14 xl:w-2/3'>
+                <section className='my-14 xl:w-2/3'>
                     <h1 className='uppercase text-clr-1 text-lg font-medium quote-divider-right'>
                         Quote
                     </h1>
-                    <h1 className='text-sm font-light text-clr-light-2 mb-3 font-serif'>
+                    <h2 className='text-sm font-light text-clr-light-2 mb-3 font-serif'>
                         Inspirational/famous
-                    </h1>
+                    </h2>
                     <div className='text-xl lg:text-2xl'>
                         <p className='font-quote font-bold'>
                             "{quoteOfTheDay.text}"
@@ -112,9 +106,9 @@ const AboutMe = () => {
                                 : "Someone"}
                         </p>
                     </div>
-                </div>
+                </section>
             )}
-        </div>
+        </main>
     );
 };
 

@@ -31,12 +31,12 @@ const Header = () => {
     };
     return (
         <>
-            <nav className='sticky flex top-0 left-0 p-2 py-3 pt-6 border-b-black border-b-2 justify-between items-center bg-clr-1 '>
-                <div className='font-medium z-20 md:text-xl'>
-                    YASH &copy;{currentYear}
-                </div>
+            <header className='sticky flex top-0 left-0 p-2 py-3 pt-6 border-b-[#4f4f4f] border-b-2 justify-between items-center bg-clr-1'>
+                <h1 className='font-medium z-20 cursor-pointer md:text-xl'>
+                    <a href='/'>YASH &copy;{currentYear}</a>
+                </h1>
                 {isOpen ? (
-                    <div className='fixed z-10  bg-clr-1 right-0 top-0 h-screen w-full grid place-content-center items-center xl:static xl:w-auto xl:h-auto xl:flex xl:gap-5'>
+                    <nav className='fixed z-10  bg-clr-1 right-0 top-0 h-screen w-full grid place-content-center items-center xl:static xl:w-auto xl:h-auto xl:flex xl:gap-5'>
                         <ul className='gap-4 flex flex-col font-normal xl:flex xl:gap-2 xl:flex-row'>
                             {links.map((currLink, index) => {
                                 return (
@@ -58,26 +58,41 @@ const Header = () => {
                             })}
                         </ul>
                         <span className='hidden xl:inline'>
-                            <RxDividerVertical size={28} color='#606060' />
+                            <RxDividerVertical size={28} color='#000' />
                         </span>
-                        <div className='mt-4 xl:m-0 xl:flex xl:items-center'>
-                            <p className='xl:hidden text-clr-light-2 my-2'>
-                                Quick links
+                        <div className='mt-4 xl:m-0 xl:flex xl:items-center ml-2'>
+                            <p className='xl:hidden text-clr-light-2 my-2 uppercase'>
+                                Socials
                             </p>
 
                             <div className='flex gap-2 items-center'>
-                                <div className='rounded-full border border-black p-2 w-fit xl:rounded-none xl:border-0'>
-                                    <FaLinkedinIn size={"22"} />
+                                <div className='rounded-full border border-black p-2 w-fit xl:rounded-none xl:border-0 '>
+                                    <a href='https://www.linkedin.com/in/yash-jivani-0245ab214/' target="_blank" rel="noreferrer">
+                                        <FaLinkedinIn
+                                            size={"22"}
+                                            className='hover:text-[#4f4f4f] hover:cursor-pointer transition-all'
+                                        />
+                                    </a>
                                 </div>
                                 <div className='rounded-full border border-black p-2 w-fit xl:rounded-none xl:border-0'>
-                                    <FaInstagram size={"22"} />
+                                    <a href='https://www.instagram.com/yash_jivani17/' target="_blank" rel="noreferrer">
+                                        <FaInstagram
+                                            size={"22"}
+                                            className='hover:text-[#4f4f4f] hover:cursor-pointer transition-all'
+                                        />
+                                    </a>
                                 </div>
                                 <div className='rounded-full border border-black p-2 w-fit xl:rounded-none xl:border-0'>
-                                    <FaGithub size={"22"} />
+                                    <a href='https://github.com/yash-jivani' target="_blank" rel="noreferrer">
+                                        <FaGithub
+                                            size={"22"}
+                                            className='hover:text-[#4f4f4f] hover:cursor-pointer transition-all'
+                                        />
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </nav>
                 ) : (
                     ""
                 )}
@@ -87,9 +102,17 @@ const Header = () => {
                         handleMenu();
                     }}
                 >
-                    {isOpen ? <span>Close</span> : <span>Menu</span>}
+                    {isOpen ? (
+                        <span className='hover:text-[#4f4f4f] transition-all'>
+                            Close
+                        </span>
+                    ) : (
+                        <span className='hover:text-[#4f4f4f] transition-all'>
+                            Menu
+                        </span>
+                    )}
                 </div>
-            </nav>
+            </header>
         </>
     );
 };

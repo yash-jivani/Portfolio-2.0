@@ -8,10 +8,10 @@ const Main = () => {
         document.documentElement.scrollTop = 0; 
     },[])
     return (
-        <div className=''>
+        <main>
             <Intro />
             <ShowcaseProject />
-        </div>
+        </main>
     );
 };
 

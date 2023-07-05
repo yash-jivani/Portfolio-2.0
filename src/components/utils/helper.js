@@ -1,7 +1,3 @@
-import DevNetworks from "./../assests/imgs/DevNetworks.png";
-import WatchSpot from "./../assests/imgs/WatchSpot.png";
-import AnnpurnaYojna from "./../assests/imgs/AnnapurnaYojna.png";
-
 export const links = [
     {
         linkName: "Home",
@@ -247,7 +243,7 @@ export const quotes = [
 export const allProjects = [
     {
         name: "DevNetworks",
-        image: DevNetworks,
+        image: null,
         description:
             "Platform for networking and sharing ideas for developers.",
         github: "https://github.com/yash-jivani/DevNetworks",
@@ -255,14 +251,14 @@ export const allProjects = [
     },
     {
         name: "WatchSpot",
-        image: WatchSpot,
+        image: null,
         description: "Online video streaming webapp.",
         github: "https://github.com/yash-jivani/WatchSpot",
         techstack: ["React", "Redux", "Tailwindcss", "Parcel"],
     },
     {
         name: "Annapurna Yojna Portal",
-        image: AnnpurnaYojna,
+        image: null,
         description: "Digitally apply for the yojna.",
         github: "https://github.com/yash-jivani/Annapurna-Yojna",
         techstack: [
