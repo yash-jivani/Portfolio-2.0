@@ -1,3 +1,7 @@
+import DevNetworks from "./../assests/imgs/DevNetworks.png";
+import WatchSpot from "./../assests/imgs/WatchSpot.png";
+import AnnpurnaYojna from "./../assests/imgs/AnnapurnaYojna.png";
+
 export const links = [
     {
         linkName: "Home",
@@ -237,5 +241,59 @@ export const quotes = [
     {
         text: "Today is difficult, tomorrow is much more difficult, but the day after tomorrow is beautiful. Most people die tomorrow evening.",
         author: "Jack Ma",
+    },
+];
+
+export const allProjects = [
+    {
+        name: "DevNetworks",
+        image: DevNetworks,
+        description:
+            "Platform for networking and sharing ideas for developers.",
+        github: "https://github.com/yash-jivani/DevNetworks",
+        techstack: ["React", "Redux", "Node.js", "Express.js", "MongoDB"],
+    },
+    {
+        name: "WatchSpot",
+        image: WatchSpot,
+        description: "Online video streaming webapp.",
+        github: "https://github.com/yash-jivani/WatchSpot",
+        techstack: ["React", "Redux", "Tailwindcss", "Parcel"],
+    },
+    {
+        name: "Annapurna Yojna Portal",
+        image: AnnpurnaYojna,
+        description: "Digitally apply for the yojna.",
+        github: "https://github.com/yash-jivani/Annapurna-Yojna",
+        techstack: [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "Tailwindcss",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+        ],
+    },
+    {
+        name: "DishDelivers",
+        image: null,
+        description: "Quick and easy way to find perfect meal!",
+        github: "https://github.com/yash-jivani/DishDelivers",
+        techstack: ["React", "Bootstrap", "Node.js", "Express.js"],
+    },
+    {
+        name: "Journey Jaunts",
+        image: null,
+        description: "Search, explore, and book adventure tours.",
+        github: "https://github.com/yash-jivani/Journey-jaunts",
+        techstack: ["React", "Node.js", "Express.js", "MongoDB"],
+    },
+    {
+        name: "Mapty",
+        image: null,
+        description: "Keep track of workouts geographically.",
+        github: "https://github.com/yash-jivani/Frontend/tree/master/04%20Mini%20Projects%20I/Mapty",
+        techstack: ["HTML", "CSS", "Javascript"],
     },
 ];

@@ -12,6 +12,8 @@ const AboutMe = () => {
 
     useEffect(() => {
         setQuoteOfTheDay(getRandomQuote(quotes));
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
     }, []);
 
     const skills = [
@@ -33,7 +35,7 @@ const AboutMe = () => {
     return (
         <div className='md:px-6 lg:px-10'>
             <div className='header text-clr-1 text-3xl my-11 uppercase xl:text-4xl'>
-                /About me &#8600;
+                • About me
             </div>
             <div className='my-16 xl:flex xl:flex-row-reverse xl:justify-between xl:gap-6'>
                 <div className='my-10 md:w-10/12 lg:w-2/3 xl:w-1/2 xl:my-0'>
@@ -80,8 +82,13 @@ const AboutMe = () => {
                             </p>
                             <p>{skills.join(" / ")}</p>
                         </div>
-                        <div className="mt-3">
-                            <a href="/" className="text-clr-1 font-medium underline underline-offset-8 hover:no-underline hover:text-[#606060]">Resume &rarr;</a> 
+                        <div className='mt-3'>
+                            <a
+                                href='/'
+                                className='text-clr-1 font-medium underline underline-offset-8 hover:no-underline hover:text-[#606060]'
+                            >
+                                Resume &rarr;
+                            </a>
                         </div>
                     </div>
                 </div>

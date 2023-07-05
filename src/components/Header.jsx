@@ -57,8 +57,8 @@ const Header = () => {
                                 );
                             })}
                         </ul>
-                        <span className='hidden  xl:inline'>
-                            <RxDividerVertical size={28} color="#606060"/>
+                        <span className='hidden xl:inline'>
+                            <RxDividerVertical size={28} color='#606060' />
                         </span>
                         <div className='mt-4 xl:m-0 xl:flex xl:items-center'>
                             <p className='xl:hidden text-clr-light-2 my-2'>

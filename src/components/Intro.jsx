@@ -1,6 +1,5 @@
 import React from "react";
 import { BsArrowDownLeft } from "react-icons/bs";
-import { GoArrowRight } from "react-icons/go";
 import { Link } from "react-router-dom";
 
 const Intro = () => {
@@ -24,21 +23,25 @@ const Intro = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex my-20 lg:mx-7'>
+            <div className='flex my-36 lg:mx-7'>
                 <div className='w-full lg:flex lg:justify-between'>
                     <div>
-                        <h1 className='text-2xl text-clr-2 lg:text-3xl'>/01</h1>
+                        <h1 className='text-clr-2'>/01</h1>
+                        <h2 className='text-2xl lg:text-3xl'>I am</h2>
                     </div>
                     <div className='lg:w-2/3'>
-                        <p className='capitalize text-base my-5 xl:text-lg'>
+                        <p className='capitalize text-base my-3 xl:text-lg'>
                             Passionate about web technologies. I love working at
                             the intersection of creativity and user-friendly
                             interfaces. I create memorable web experiences. when
                             I'm not building or exploring new web experiences,
                             I'm probably playing games or watching movies.
                         </p>
-                        <Link to={"/about"} className='linkHover'>
-                            More <GoArrowRight className='inline' />
+                        <Link
+                            to={"/about"}
+                            className='underline underline-offset-8 hover:no-underline hover:text-[#606060]'
+                        >
+                            About me &rarr;
                         </Link>
                     </div>
                 </div>
