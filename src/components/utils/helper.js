@@ -11,10 +11,6 @@ export const links = [
         linkName: "About me",
         path: "/about",
     },
-    {
-        linkName: "Contact",
-        path: "/contact",
-    },
 ];
 
 export const quotes = [
