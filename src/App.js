@@ -12,7 +12,7 @@ AOS.init({
 
 const App = () => {
     return (
-        <div className='px-3 md:px-5 mx-auto max-w-[1440px]'>
+        <div className='px-4 md:px-5 mx-auto max-w-[1440px]'>
             <Header />
             <Outlet />
             <Footer />

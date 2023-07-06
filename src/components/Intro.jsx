@@ -52,8 +52,8 @@ const Intro = () => {
                         </p>
                         <Link
                             data-aos='fade'
-                            data-aos-duration='1000'
-                            data-aos-delay='300'
+                            data-aos-duration='900'
+                            data-aos-delay='400'
                             data-aos-offset='0'
                             to={"/about"}
                             className='underline underline-offset-8 hover:no-underline hover:text-[#606060]'

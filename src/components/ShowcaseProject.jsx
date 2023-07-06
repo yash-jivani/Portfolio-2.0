@@ -20,8 +20,8 @@ const ShowcaseProject = () => {
                 <Link
                     to={"/projects"}
                     data-aos='fade'
-                    data-aos-duration='1000'
-                    data-aos-delay='200'
+                    data-aos-duration='9000'
+                    data-aos-delay='300'
                     data-aos-offset='0'
                     className='underline my-14 underline-offset-8 hover:no-underline hover:text-[#606060]'
                 >
