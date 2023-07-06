@@ -5,7 +5,13 @@ import { links } from "./utils/helper";
 
 const ErrorPage = () => {
     return (
-        <main className='h-screen w-full grid place-items-center'>
+        <main
+            className='h-screen w-full grid place-items-center'
+            data-aos='fade'
+            data-aos-duration='1000'
+            data-aos-delay='100'
+            data-aos-offset='0'
+        >
             <section className='flex flex-col items-center justify-center gap-10'>
                 <header className='font-medium text-3xl flex items-center justify-center gap-1 md:text-4xl xl:text-5xl'>
                     <h1 className='uppercase'>page not found</h1>

@@ -3,10 +3,10 @@ import Intro from "./Intro";
 import ShowcaseProject from "./ShowcaseProject";
 
 const Main = () => {
-    useEffect(()=>{
+    useEffect(() => {
         document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0; 
-    },[])
+        document.documentElement.scrollTop = 0;
+    }, []);
     return (
         <main>
             <Intro />

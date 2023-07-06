@@ -67,7 +67,11 @@ const Header = () => {
 
                             <div className='flex gap-2 items-center'>
                                 <div className='rounded-full border border-black p-2 w-fit xl:rounded-none xl:border-0 '>
-                                    <a href='https://www.linkedin.com/in/yash-jivani-0245ab214/' target="_blank" rel="noreferrer">
+                                    <a
+                                        href='https://www.linkedin.com/in/yash-jivani-0245ab214/'
+                                        target='_blank'
+                                        rel='noreferrer'
+                                    >
                                         <FaLinkedinIn
                                             size={"22"}
                                             className='hover:text-[#4f4f4f] hover:cursor-pointer transition-all'
@@ -75,7 +79,11 @@ const Header = () => {
                                     </a>
                                 </div>
                                 <div className='rounded-full border border-black p-2 w-fit xl:rounded-none xl:border-0'>
-                                    <a href='https://www.instagram.com/yash_jivani17/' target="_blank" rel="noreferrer">
+                                    <a
+                                        href='https://www.instagram.com/yash_jivani17/'
+                                        target='_blank'
+                                        rel='noreferrer'
+                                    >
                                         <FaInstagram
                                             size={"22"}
                                             className='hover:text-[#4f4f4f] hover:cursor-pointer transition-all'
@@ -83,7 +91,11 @@ const Header = () => {
                                     </a>
                                 </div>
                                 <div className='rounded-full border border-black p-2 w-fit xl:rounded-none xl:border-0'>
-                                    <a href='https://github.com/yash-jivani' target="_blank" rel="noreferrer">
+                                    <a
+                                        href='https://github.com/yash-jivani'
+                                        target='_blank'
+                                        rel='noreferrer'
+                                    >
                                         <FaGithub
                                             size={"22"}
                                             className='hover:text-[#4f4f4f] hover:cursor-pointer transition-all'

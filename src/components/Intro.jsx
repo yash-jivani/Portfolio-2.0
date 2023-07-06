@@ -7,11 +7,19 @@ const Intro = () => {
         <>
             <section className='intro my-5 min-h-[75vh] grid md:mx-7 lg:mx-10'>
                 <div className='flex flex-col justify-end '>
-                    <header className=' text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl uppercase'>
+                    <header
+                        className='text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl uppercase'
+                        data-aos='fade-up'
+                        data-aos-duration='1000'
+                    >
                         <h1>Yash Jivani</h1>
                         <h1>Portfolio site.</h1>
                     </header>
-                    <header className='text-xl md:text-2xl lg:text-3xl 2xl:text-4xl'>
+                    <header
+                        className='text-xl md:text-2xl lg:text-3xl 2xl:text-4xl'
+                        data-aos='fade'
+                        data-aos-delay='700'
+                    >
                         <h2 className='capitalize text-clr-light font-medium mt-3'>
                             Full stack developer
                         </h2>
@@ -30,7 +38,12 @@ const Intro = () => {
                         <h2 className='text-2xl lg:text-3xl'>Me</h2>
                     </header>
                     <article className='lg:w-2/3 lg:mt-20'>
-                        <p className='text-base my-3 xl:text-lg'>
+                        <p
+                            className='text-base my-3 xl:text-lg'
+                            data-aos='fade-up'
+                            data-aos-duration='1000'
+                            data-aos-offset='0'
+                        >
                             Passionate about web technologies. I love working at
                             the intersection of creativity and user-friendly
                             interfaces. I create memorable web experiences. when
@@ -38,6 +51,10 @@ const Intro = () => {
                             I'm probably playing games or watching movies.
                         </p>
                         <Link
+                            data-aos='fade'
+                            data-aos-duration='1000'
+                            data-aos-delay='300'
+                            data-aos-offset='0'
                             to={"/about"}
                             className='underline underline-offset-8 hover:no-underline hover:text-[#606060]'
                         >
