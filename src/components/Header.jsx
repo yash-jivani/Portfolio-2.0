@@ -31,7 +31,7 @@ const Header = () => {
     };
     return (
         <>
-            <header className='sticky flex top-0 left-0 p-2 py-3 pt-6 border-b-[#4f4f4f] border-b-2 justify-between items-center bg-clr-1'>
+            <header className='sticky flex top-0 z-[99999999] left-0 p-2 py-3 pt-6 border-b-[#4f4f4f] border-b-2 justify-between items-center bg-clr-1'>
                 <h1 className='font-medium z-20 cursor-pointer md:text-xl'>
                     <a href='/'>YASH &copy;{currentYear}</a>
                 </h1>
