@@ -3,24 +3,19 @@
   "name": "Yash Jivani - Full Stack Developer Portfolio",
   "icons": [
     {
-      "src": "icon-64.png",
-      "sizes": "64x64",
-      "type": "image/png"
+      "src": "logo64.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
     },
     {
-      "src": "icon-128.png",
-      "sizes": "128x128",
-      "type": "image/png"
+      "src": "logo256.ico",
+      "type": "image/x-icon",
+      "sizes": "192x192"
     },
     {
-      "src": "icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "src": "logo512.ico",
+      "type": "image/x-icon",
+      "sizes": "512x512"
     }
   ],
   "start_url": "/",
