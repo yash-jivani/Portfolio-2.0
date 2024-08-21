@@ -44,7 +44,7 @@ const Footer = () => {
                             data-aos-offset='0'
                         >
                             <a
-                                href='https://www.linkedin.com/in/yash-jivani-0245ab214/'
+                                href='https://www.linkedin.com/in/yash-jivani17/'
                                 target='_target'
                                 rel='noreferrer'
                             >
